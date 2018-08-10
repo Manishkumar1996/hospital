@@ -7,7 +7,7 @@ $background-grey: #F7F7F7;
 
 .welcome {
     min-height: 975px;
-    background-image: url("../welcome.jpg");
+    background-image: url("../image/welcome.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -308,7 +308,7 @@ $background-grey: #F7F7F7;
     
     display: flex;
     flex-direction: column;
-    flex: 1;
+//    flex: 1;
     justify-content: space-between;
     
     .doctor-img {
@@ -325,27 +325,33 @@ $background-grey: #F7F7F7;
 
     .doctor-info {
         padding: 35px 20px 40px;
-//        display: flex;
-//        flex-direction: column;
-//        flex: 1;
-//        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto !important;
+        justify-content: space-between;
         
         h6 {
             text-transform: uppercase;
-            padding-bottom: 20px;
-            margin-bottom: 25px;
+//            padding-bottom: 20px;
+//            margin-bottom: 25px;
             position: relative;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+//            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        hr {
+            width: 100%;
         }
         
         .doctor-description {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            flex: 1 1 auto!important;
         }
         p {
             font-size: 15px;
             margin-bottom: 25px;
+//            flex: 1;
         }
         button {
             border: 1px solid $pagecolor;
@@ -359,7 +365,25 @@ $background-grey: #F7F7F7;
     }
 }
 
+.doctor-indicator {
+    top: 100%;
+    bottom: auto;
+    
+    li {
+        border: 1px solid $pagecolor;
+        width: 8px;
+        height: 8px;
+        border-radius: 10px;
+    }
+    
+    .active {
+        background-color: $pagecolor;
+    }
+}
+
 .card-doctor:hover {
+    cursor: pointer;
+    
     button {
         background-color: $pagecolor;
         color: white;

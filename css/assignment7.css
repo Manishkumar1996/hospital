@@ -4,7 +4,7 @@
 
 .welcome {
   min-height: 975px;
-  background-image: url("../welcome.jpg");
+  background-image: url("../image/welcome.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -242,7 +242,6 @@
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  flex: 1;
   justify-content: space-between;
 }
 .card-doctor .doctor-img {
@@ -257,18 +256,23 @@
 }
 .card-doctor .doctor-info {
   padding: 35px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto !important;
+  justify-content: space-between;
 }
 .card-doctor .doctor-info h6 {
   text-transform: uppercase;
-  padding-bottom: 20px;
-  margin-bottom: 25px;
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.card-doctor .doctor-info hr {
+  width: 100%;
 }
 .card-doctor .doctor-info .doctor-description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1 1 auto !important;
 }
 .card-doctor .doctor-info p {
   font-size: 15px;
@@ -284,6 +288,23 @@
   border-radius: 2px;
 }
 
+.doctor-indicator {
+  top: 100%;
+  bottom: auto;
+}
+.doctor-indicator li {
+  border: 1px solid #4489FE;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+}
+.doctor-indicator .active {
+  background-color: #4489FE;
+}
+
+.card-doctor:hover {
+  cursor: pointer;
+}
 .card-doctor:hover button {
   background-color: #4489FE;
   color: white;
