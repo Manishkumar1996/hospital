@@ -1,0 +1,367 @@
+$pagecolor: #4489FE;
+$background-grey: #F7F7F7;
+
+* {
+    box-sizing: border-box;
+}
+
+.welcome {
+    min-height: 975px;
+    background-image: url("../welcome.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    .nav-1,
+    .nav-2 {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 2px !important;
+        
+    .navbar-toggler {
+        background-color: transparent !important;
+        border: none;
+    }
+}
+
+    .nav-1 {
+        @media only screen and (max-width: 575px) {
+            ul {
+                flex-direction: row;
+            }
+            
+            a {
+                padding: 10px !important;
+            }
+        }
+    }
+    
+    .nav-2 {
+        .fa {
+            padding: 5px;
+        }
+        
+        a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .navbar-brand {
+            border-bottom: none !important;
+        }
+
+    @media only screen and (max-width: 767px) {
+        #collapsibleNavbar   {
+            text-align: center;
+        }
+        
+        a:hover {
+            border-bottom: none;
+        }
+    }
+           
+}
+
+    .carousel {
+        .carousel-control {
+            bottom: auto !important;
+            top: 50%;
+            transform: translate(0 , -50%);
+            width: auto !important;
+            padding: 15px 20px;
+            font-size: 25px;
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            background-image: none;
+        }
+            .carousel-control:hover {
+                background-color: $pagecolor !important;
+            }
+    }
+    
+    .carousel-item {
+        height: 1000px !important;
+    }
+    
+    .carousel-caption {
+        text-align: left !important;
+        top: 40% !important;
+        bottom: auto !important;
+        right: 30% !important;
+        transform: translate( 0 , -50%);
+        
+        p {
+            font-size: 50px !important;
+            margin-bottom: 40px !important;
+        }
+        
+        button {
+            color: black;
+            text-transform: uppercase;
+            padding: 15px 20px;
+            font-size: 10px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            margin-right: 15px !important;
+        }
+        
+        button:hover {
+            background-color: $pagecolor;
+            color: white;
+            outline: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        
+        .carousel-control {
+            
+            padding: 10px 10px !important;
+            font-size: 20px !important;
+            top: 30% !important;
+        }
+            
+        .carousel-caption {
+            top: 30% !important;
+            right: 20% !important;
+                
+            p {
+                font-size: 30px !important;
+                margin-bottom: 20px !important;
+            }
+                
+            button {
+                margin-top: 20px;
+                padding: 10px 15px;
+            }
+        }
+        
+        .help-desk:nth-child(1) {
+            background-color: #77A9FE;
+        }
+    
+        .help-desk:nth-child(2) {
+            background-color: #4486FE;
+            margin-left: 0 !important;
+            margin-top: -1px;
+        }
+    
+        .help-desk:nth-child(3) {
+            background-color: #3971D2;
+            margin-left: 0 !important;
+            margin-top: -1px;
+        }
+    }
+    
+    .help-desk {
+        padding: 40px 25px;
+        color: white;
+        
+        h6 {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 15px;
+            line-height: 2;
+            flex: 1;
+//            margin-bottom: 20px;
+        }
+        
+        button {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px 15px;
+            font-size: 12px;
+        }
+    }
+    
+    .help-desk:nth-child(1) {
+        background-color: #77A9FE;
+        .p {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .help-desk:nth-child(2) {
+        background-color: #4486FE;
+        margin-left: -1px;
+    }
+    
+    .help-desk:nth-child(3) {
+        background-color: #3971D2;
+        margin-left: -1px;
+        
+        ul {
+            flex: 1;
+        }
+        
+        .list-group-item {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            padding: 0 0 10px 0;
+            margin-bottom: 10px;
+        }
+        
+        .list-group-item:last-child {
+            border-bottom: none !important;
+        }
+        
+        .badge {
+            background-color: transparent;
+            padding: 10px 0;
+        }
+    }
+    
+    .welcome-pop {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        transform: translate(0 , -50%);
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .row {
+            margin: 0;
+//            min-height: 355px;
+        }
+        
+        .help-desk {
+//            height: 100%;
+        }
+    }
+}
+
+
+
+%topline {
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 2;
+    margin-bottom: 50px;
+    p {
+        font-size: 17px;
+    }
+}
+
+.medical {
+    padding: 270px 0 70px 0;
+}
+
+.topline {
+        @extend %topline;   
+    }
+
+    .card-service {
+        text-align: center !important;
+        padding: 20px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1); 
+        
+        span {
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+            font-size: 50px;
+            padding: 25px 0;
+            color: $pagecolor;
+            margin: 30px 0;
+        }
+        
+        h5 {
+            font-weight: bold;
+            font-size: 17px;
+        }
+        
+        p {
+            font-size: 15px;
+        }
+    }
+      
+
+@media only screen and (max-width: 767px) {
+    .medical {
+        padding-top: 600px;
+    }
+    
+    .service-box {
+        padding: 0 0 20px 0 !important ;
+    }
+    
+}
+
+.doctors-shell {
+    padding: 90px 0;
+    background-color: $background-grey;
+}
+
+
+.card-doctor {
+    background-color: white;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    
+    .doctor-img {
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.1);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+        }
+    }
+
+    .doctor-info {
+        padding: 35px 20px 40px;
+//        display: flex;
+//        flex-direction: column;
+//        flex: 1;
+//        justify-content: space-between;
+        
+        h6 {
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .doctor-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        p {
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+        button {
+            border: 1px solid $pagecolor;
+            background-color: white;
+            padding: 10px 18px;
+            text-transform: uppercase;
+            font-size: 10px;
+            color: $pagecolor;
+            border-radius: 2px;
+        }
+    }
+}
+
+.card-doctor:hover {
+    button {
+        background-color: $pagecolor;
+        color: white;
+    }
+}

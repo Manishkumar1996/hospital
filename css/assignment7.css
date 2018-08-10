@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+
+.welcome {
+  min-height: 975px;
+  background-image: url("../welcome.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.welcome .nav-1,
+.welcome .nav-2 {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  margin-bottom: 2px !important;
+}
+.welcome .nav-1 .navbar-toggler,
+.welcome .nav-2 .navbar-toggler {
+  background-color: transparent !important;
+  border: none;
+}
+@media only screen and (max-width: 575px) {
+  .welcome .nav-1 ul {
+    flex-direction: row;
+  }
+  .welcome .nav-1 a {
+    padding: 10px !important;
+  }
+}
+.welcome .nav-2 .fa {
+  padding: 5px;
+}
+.welcome .nav-2 a:hover {
+  border-bottom: 1px solid white;
+}
+.welcome .nav-2 .navbar-brand {
+  border-bottom: none !important;
+}
+@media only screen and (max-width: 767px) {
+  .welcome .nav-2 #collapsibleNavbar {
+    text-align: center;
+  }
+  .welcome .nav-2 a:hover {
+    border-bottom: none;
+  }
+}
+.welcome .carousel .carousel-control {
+  bottom: auto !important;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: auto !important;
+  padding: 15px 20px;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-image: none;
+}
+.welcome .carousel .carousel-control:hover {
+  background-color: #4489FE !important;
+}
+.welcome .carousel-item {
+  height: 1000px !important;
+}
+.welcome .carousel-caption {
+  text-align: left !important;
+  top: 40% !important;
+  bottom: auto !important;
+  right: 30% !important;
+  transform: translate(0, -50%);
+}
+.welcome .carousel-caption p {
+  font-size: 50px !important;
+  margin-bottom: 40px !important;
+}
+.welcome .carousel-caption button {
+  color: black;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  margin-right: 15px !important;
+}
+.welcome .carousel-caption button:hover {
+  background-color: #4489FE;
+  color: white;
+  outline: 0;
+}
+@media only screen and (max-width: 767px) {
+  .welcome .carousel-control {
+    padding: 10px 10px !important;
+    font-size: 20px !important;
+    top: 30% !important;
+  }
+  .welcome .carousel-caption {
+    top: 30% !important;
+    right: 20% !important;
+  }
+  .welcome .carousel-caption p {
+    font-size: 30px !important;
+    margin-bottom: 20px !important;
+  }
+  .welcome .carousel-caption button {
+    margin-top: 20px;
+    padding: 10px 15px;
+  }
+  .welcome .help-desk:nth-child(1) {
+    background-color: #77A9FE;
+  }
+  .welcome .help-desk:nth-child(2) {
+    background-color: #4486FE;
+    margin-left: 0 !important;
+    margin-top: -1px;
+  }
+  .welcome .help-desk:nth-child(3) {
+    background-color: #3971D2;
+    margin-left: 0 !important;
+    margin-top: -1px;
+  }
+}
+.welcome .help-desk {
+  padding: 40px 25px;
+  color: white;
+}
+.welcome .help-desk h6 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.welcome .help-desk p {
+  font-size: 15px;
+  line-height: 2;
+  flex: 1;
+}
+.welcome .help-desk button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+.welcome .help-desk:nth-child(1) {
+  background-color: #77A9FE;
+}
+.welcome .help-desk:nth-child(1) .p {
+  flex: 1;
+  margin-bottom: 20px;
+}
+.welcome .help-desk:nth-child(2) {
+  background-color: #4486FE;
+  margin-left: -1px;
+}
+.welcome .help-desk:nth-child(3) {
+  background-color: #3971D2;
+  margin-left: -1px;
+}
+.welcome .help-desk:nth-child(3) ul {
+  flex: 1;
+}
+.welcome .help-desk:nth-child(3) .list-group-item {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 0 0 10px 0;
+  margin-bottom: 10px;
+}
+.welcome .help-desk:nth-child(3) .list-group-item:last-child {
+  border-bottom: none !important;
+}
+.welcome .help-desk:nth-child(3) .badge {
+  background-color: transparent;
+  padding: 10px 0;
+}
+.welcome .welcome-pop {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transform: translate(0, -50%);
+}
+@media only screen and (min-width: 768px) {
+  .welcome .row {
+    margin: 0;
+  }
+}
+
+.topline {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+.topline p {
+  font-size: 17px;
+}
+
+.medical {
+  padding: 270px 0 70px 0;
+}
+
+.card-service {
+  text-align: center !important;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+}
+.card-service span {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  font-size: 50px;
+  padding: 25px 0;
+  color: #4489FE;
+  margin: 30px 0;
+}
+.card-service h5 {
+  font-weight: bold;
+  font-size: 17px;
+}
+.card-service p {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .medical {
+    padding-top: 600px;
+  }
+
+  .service-box {
+    padding: 0 0 20px 0 !important;
+  }
+}
+.doctors-shell {
+  padding: 90px 0;
+  background-color: #F7F7F7;
+}
+
+.card-doctor {
+  background-color: white;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+.card-doctor .doctor-img {
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.card-doctor .doctor-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+.card-doctor .doctor-info {
+  padding: 35px 20px 40px;
+}
+.card-doctor .doctor-info h6 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.card-doctor .doctor-info .doctor-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-doctor .doctor-info p {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+.card-doctor .doctor-info button {
+  border: 1px solid #4489FE;
+  background-color: white;
+  padding: 10px 18px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #4489FE;
+  border-radius: 2px;
+}
+
+.card-doctor:hover button {
+  background-color: #4489FE;
+  color: white;
+}
+
+/*# sourceMappingURL=assignment7.css.map */
