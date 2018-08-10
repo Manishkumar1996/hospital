@@ -2,10 +2,24 @@
   box-sizing: border-box;
 }
 
+.department button, .card-doctor .doctor-info button {
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #4489FE;
+  border-radius: 2px;
+}
+
+.department button:focus, .card-doctor .doctor-info button:focus {
+  outline: 0 !important;
+}
+
 .welcome {
   min-height: 975px;
   background-image: url("../image/welcome.jpg");
-  background-position: center;
+  background-position: center right;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -242,6 +256,7 @@
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  flex: 1;
   justify-content: space-between;
 }
 .card-doctor .doctor-img {
@@ -251,18 +266,18 @@
 .card-doctor .doctor-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
+  object-fit: cover;
+  object-position: center top;
 }
 .card-doctor .doctor-info {
   padding: 35px 20px 40px;
   display: flex;
+  text-align: center;
   flex-direction: column;
   flex: 1 1 auto !important;
   justify-content: space-between;
 }
 .card-doctor .doctor-info h6 {
-  text-transform: uppercase;
   position: relative;
 }
 .card-doctor .doctor-info hr {
@@ -275,17 +290,13 @@
   flex: 1 1 auto !important;
 }
 .card-doctor .doctor-info p {
-  font-size: 15px;
+  font-size: 13px;
   margin-bottom: 25px;
+  line-height: 2;
 }
 .card-doctor .doctor-info button {
   border: 1px solid #4489FE;
   background-color: white;
-  padding: 10px 18px;
-  text-transform: uppercase;
-  font-size: 10px;
-  color: #4489FE;
-  border-radius: 2px;
 }
 
 .doctor-indicator {
@@ -308,6 +319,74 @@
 .card-doctor:hover button {
   background-color: #4489FE;
   color: white;
+}
+
+.availables {
+  background-image: url(../image/available.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.availables .avail-color {
+  background-color: rgba(68, 137, 254, 0.8);
+}
+.availables .avail-info {
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+.availables .avail-info p {
+  text-transform: capitalize;
+}
+
+.our-services {
+  padding: 100px 0;
+}
+
+.department {
+  background-color: #4489FE;
+  color: white;
+  flex: 1;
+}
+.department .heading {
+  text-transform: uppercase;
+}
+.department .item {
+  background-color: transparent;
+  text-align: left;
+  border: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+}
+.department .item:last-child {
+  border-bottom: 0;
+}
+.department button {
+  color: white;
+}
+
+.card-clinic .heading {
+  margin-bottom: 40px;
+}
+.card-clinic .doctor-info {
+  text-align: left;
+}
+.card-clinic .carousel-control-right {
+  top: auto;
+  bottom: 100%;
+  background-color: #4489FE;
+  width: auto !important;
+  padding: 10px 15px;
+  transform: translate(0, -80%);
+}
+.card-clinic .carousel-control-left {
+  left: 100%;
+  bottom: 100%;
+  top: auto;
+  background-color: #4489FE;
+  width: auto !important;
+  padding: 10px 15px;
+  transform: translate(-260%, -80%);
 }
 
 /*# sourceMappingURL=assignment7.css.map */
