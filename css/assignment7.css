@@ -246,8 +246,9 @@
     padding: 0 0 20px 0 !important;
   }
 }
-.doctors-shell {
-  padding: 90px 0;
+.doctors-shell,
+.patients-shell {
+  padding: 100px 0 150px 0;
   background-color: #F7F7F7;
 }
 
@@ -301,6 +302,7 @@
 
 .doctor-indicator {
   top: 100%;
+  transform: translate(0, 50px);
   bottom: auto;
 }
 .doctor-indicator li {
@@ -387,6 +389,44 @@
   width: auto !important;
   padding: 10px 15px;
   transform: translate(-260%, -80%);
+}
+
+.carousel-item {
+  overflow: visible !important;
+}
+
+.patient-link {
+  color: #4489FE;
+  text-decoration: none !important;
+  padding-bottom: 10px;
+}
+
+.patient-link:hover {
+  text-decoration: none !important;
+}
+
+.card-patient {
+  padding-top: 50px;
+  position: relative;
+}
+.card-patient .patient-img {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 3px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+.card-patient .patient-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  object-position: center top;
 }
 
 /*# sourceMappingURL=assignment7.css.map */

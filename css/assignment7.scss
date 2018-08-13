@@ -312,8 +312,9 @@ $background-grey: #F7F7F7;
     
 }
 
-.doctors-shell {
-    padding: 90px 0;
+.doctors-shell,
+.patients-shell {
+    padding: 100px 0 150px 0;
     background-color: $background-grey;
 }
 
@@ -381,6 +382,7 @@ $background-grey: #F7F7F7;
 
 .doctor-indicator {
     top: 100%;
+    transform: translate(0 , 50px);
     bottom: auto;
     
     li {
@@ -491,5 +493,43 @@ $background-grey: #F7F7F7;
 }
 
 .carousel-item {
-//    overflow: hidden !important;
+    overflow: visible !important;
+}
+
+.patient-link {
+    color: $pagecolor;
+    text-decoration: none !important;
+    padding-bottom: 10px;
+}
+
+.patient-link:hover {
+    text-decoration: none !important;
+}
+
+.card-patient {
+    padding-top: 50px;
+    position: relative;
+    
+    .patient-img {
+        width: 120px;
+        height: 120px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 3px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50% , -50%);
+        
+        
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            object-position: center top;
+        }
+        
+    }
 }
