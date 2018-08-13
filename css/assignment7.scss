@@ -20,6 +20,13 @@ $background-grey: #F7F7F7;
 }
 
 
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
 
 .welcome {
     min-height: 975px;
@@ -493,7 +500,7 @@ $background-grey: #F7F7F7;
 }
 
 .carousel-item {
-    overflow: visible !important;
+    overflow: hidden !important;
 }
 
 .patient-link {
@@ -531,5 +538,36 @@ $background-grey: #F7F7F7;
             object-position: center top;
         }
         
+    }
+}
+
+
+.medical-news {
+    padding: 100px 0 150px 0;
+}
+
+.card-medical {
+    h6 {
+        margin-bottom: 15px;
+    }
+    
+    p {
+        margin: 0 !important;
+    }
+    
+    .medical-img {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+            object-position: center top;
+        }
     }
 }
