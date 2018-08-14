@@ -209,6 +209,7 @@
   text-align: center;
   max-width: 520px;
   margin: 0 auto;
+  padding: 0 10px;
   line-height: 2;
   margin-bottom: 50px;
 }
@@ -398,10 +399,6 @@
   transform: translate(-260%, -80%);
 }
 
-.carousel-item {
-  overflow: hidden !important;
-}
-
 .patient-link {
   color: #4489FE;
   text-decoration: none !important;
@@ -413,8 +410,15 @@
 }
 
 .card-patient {
-  padding-top: 50px;
   position: relative;
+  padding-top: 60px;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.card-patient .doctor-info {
+  padding-top: 70px;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) !important;
 }
 .card-patient .patient-img {
   width: 120px;
@@ -425,7 +429,7 @@
   position: absolute;
   left: 50%;
   top: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 .card-patient .patient-img img {
   width: 100%;

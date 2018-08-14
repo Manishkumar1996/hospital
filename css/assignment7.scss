@@ -265,6 +265,7 @@ $background-grey: #F7F7F7;
     text-align: center;
     max-width: 520px;
     margin: 0 auto;
+    padding: 0 10px;
     line-height: 2;
     margin-bottom: 50px;
     p {
@@ -499,8 +500,8 @@ $background-grey: #F7F7F7;
     }
 }
 
-.carousel-item {
-    overflow: hidden !important;
+.carousel-inner {
+//    overflow: visible !important;
 }
 
 .patient-link {
@@ -514,8 +515,17 @@ $background-grey: #F7F7F7;
 }
 
 .card-patient {
-    padding-top: 50px;
     position: relative;
+    padding-top: 60px;
+    background-color: transparent !important;
+    box-shadow: none!important;
+    
+    .doctor-info {
+//        align-self: flex-end;
+         padding-top: 70px;
+        background-color: white;
+            box-shadow: 0 0 8px rgba(0,0,0,0.3)!important;
+    }
     
     .patient-img {
         width: 120px;
@@ -526,7 +536,7 @@ $background-grey: #F7F7F7;
         position: absolute;
         left: 50%;
         top: 0;
-        transform: translate(-50% , -50%);
+        transform: translate(-50% , 0);
         
         
         img {
