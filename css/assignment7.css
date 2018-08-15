@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.department button, .card-doctor .doctor-info button {
+.request-appoint button, .department button, .card-doctor .doctor-info button, .welcome .help-desk button, .welcome .carousel-caption button {
   border: 1px solid white;
   background-color: transparent;
   padding: 10px 20px;
@@ -12,8 +12,19 @@
   border-radius: 2px;
 }
 
-.department button:focus, .card-doctor .doctor-info button:focus {
+.request-appoint button:focus, .department button:focus, .card-doctor .doctor-info button:focus, .welcome .help-desk button:focus, .welcome .carousel-caption button:focus {
   outline: 0 !important;
+}
+
+.request-appoint button:hover, .department button:hover, .card-doctor .doctor-info button:hover, .welcome .help-desk button:hover, .welcome .carousel-caption button:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  border-color: #4489FE;
+  background-color: #4489FE;
+  color: white;
+}
+
+.request-appoint button:active, .department button:active, .card-doctor .doctor-info button:active, .welcome .help-desk button:active, .welcome .carousel-caption button:active {
+  filter: grayscale(0.5);
 }
 
 .clearfix::after {
@@ -95,18 +106,9 @@
 }
 .welcome .carousel-caption button {
   color: black;
-  text-transform: uppercase;
-  padding: 15px 20px;
-  font-size: 10px;
-  font-weight: bold;
   background-color: white;
   border: none;
   margin-right: 15px !important;
-}
-.welcome .carousel-caption button:hover {
-  background-color: #4489FE;
-  color: white;
-  outline: 0;
 }
 @media only screen and (max-width: 767px) {
   .welcome .carousel-control {
@@ -154,12 +156,7 @@
   flex: 1;
 }
 .welcome .help-desk button {
-  background-color: transparent;
-  border: 1px solid white;
   color: white;
-  text-transform: uppercase;
-  padding: 10px 15px;
-  font-size: 12px;
 }
 .welcome .help-desk:nth-child(1) {
   background-color: #77A9FE;
@@ -251,7 +248,7 @@
   }
 
   .service-box {
-    padding: 0 0 20px 0 !important;
+    padding: 0 15px 20px 15px !important;
   }
 }
 .doctors-shell,
@@ -305,7 +302,6 @@
 }
 .card-doctor .doctor-info button {
   border: 1px solid #4489FE;
-  background-color: white;
 }
 
 .doctor-indicator {
@@ -339,9 +335,9 @@
 }
 .availables .avail-color {
   background-color: rgba(68, 137, 254, 0.8);
+  padding: 100px 0;
 }
 .availables .avail-info {
-  padding: 100px 0;
   text-align: center;
   color: white;
 }
@@ -418,7 +414,7 @@
 .card-patient .doctor-info {
   padding-top: 70px;
   background-color: white;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
 }
 .card-patient .patient-img {
   width: 120px;
@@ -463,6 +459,54 @@
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   object-position: center top;
+}
+
+.appointment {
+  padding: 100px 0;
+  background-color: #F7F7F7;
+}
+
+.instructions {
+  border: none !important;
+  background-color: transparent;
+}
+.instructions .instruct-header {
+  background-color: #4489FE !important;
+  border-bottom: none !important;
+}
+.instructions .instruct-header .instruct-link {
+  color: white !important;
+  background-color: #4489FE;
+}
+.instructions .instruct-header .instruct-link .minus {
+  display: inline-block;
+}
+.instructions .instruct-header .instruct-link .plus {
+  display: none !important;
+}
+.instructions .instruct-header .instruct-link.collapsed .minus {
+  display: none;
+}
+.instructions .instruct-header .instruct-link.collapsed .plus {
+  display: inline-block !important;
+}
+.instructions .instruct-body {
+  position: relative;
+}
+.instructions .instruct-body::before {
+  content: " ";
+  display: inline-block;
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-200%, -50%) rotate(45deg);
+}
+
+.request-appoint button {
+  background-color: #4489FE;
+  color: white;
 }
 
 /*# sourceMappingURL=assignment7.css.map */

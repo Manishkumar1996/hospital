@@ -11,7 +11,7 @@
     </head>
     <body>
         
-        <div class="welcome">
+        <div id="home" class="welcome">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-between nav-1">
             <div class="container">
                 <ul class="navbar-nav">
@@ -21,18 +21,18 @@
                 </ul>
                 
                 <ul class="navbar-nav">
-                  <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-twitter"></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-facebook"></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-linkedin"></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-google-plus"></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-skype"></span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://twitter.com/login?lang=en" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://aboutme.google.com/" target="_blank"><span class="fa fa-google-plus"></span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://www.skype.com/en/" target="_blank"><span class="fa fa-skype"></span></a></li>
                 </ul>
             </div>
             </nav>
         
             <nav class="navbar navbar-expand-md bg-dark navbar-dark nav-2 ">
                 <div class="container">
-                        <a href="#" class="navbar-brand">MEDICAL</a>
+                        <a href="#medical" class="navbar-brand">MEDICAL</a>
                         
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                             <span class="navbar-toggler-icon"></span>
@@ -40,13 +40,37 @@
                     
                     <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar" >
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Departments</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Timetable</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Shortcodes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-search"></span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#doctors">Departments</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#timetable">Timetable</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reviews">Shortcodes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="modal" href="#search"><span class="fa fa-search"></span></a></li>
+                        
+                        <div class="modal fade" id="search">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            
+                            <div class="modal-header">
+                              <h4 class="modal-title">SEARCH BOX</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            
+                            <div class="modal-body form-group">
+                                <input type="text" id="searchtext" class="form-control" placeholder="Search" />
+                            </div>
+
+                            <div class="modal-footer">
+                              <button  type="submit" data-target="#searchtext" class="btn btn-success">Search</button>
+                                 
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      
                     </ul>
                     </div>
                 </div>
@@ -83,7 +107,7 @@
                 </a>  
             </div>
             
-            <div class="welcome-pop">
+            <div id="timetable" class="welcome-pop">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 help-desk d-flex flex-column justify-content-between">
@@ -163,7 +187,7 @@
         </div>
         
         
-        <div class="doctors-shell">
+        <div id="doctors" class="doctors-shell">
            <div class="topline">
                <h1>We are Here for You</h1>
                <p>All our consultants are highly experienced in their fields and produce excellent outcomes for patients</p>
@@ -174,13 +198,12 @@
                      <ul class="carousel-indicators doctor-indicator">
                         <li data-target="#mycarousel1" data-slide-to="0" class="active"></li>
                         <li data-target="#mycarousel1" data-slide-to="1"></li>
-                        <li data-target="#mycarousel1" data-slide-to="2"></li>
                      </ul>
              
                       <div class="carousel-inner">
                           <div class="carousel-item active">
                               <div class="row">
-                                 <div class="col-lg-3 col-sm-6 col-12 px-2 py-4 d-flex">
+                                 <div class="col-lg-3 col-sm-6 col-12 py-4 d-flex">
                                       <div class="card-doctor">
                                           <div class="doctor-img">
                                               <img src="./image/1.png" alt="2" />
@@ -198,7 +221,7 @@
                                       </div>
                                   </div>
                                   
-                                  <div class="col-lg-3 col-sm-6 col-12 px-2 py-4 d-flex">
+                                  <div class="col-lg-3 col-sm-6 col-12 py-4 d-flex">
                                       <div class="card-doctor">
                                           <div class="doctor-img">
                                               <img src="./image/2.png" alt="2" />
@@ -216,7 +239,7 @@
                                       </div>
                                   </div>
                                   
-                                 <div class="col-lg-3 col-sm-6 col-12 px-2 py-4 d-flex">
+                                 <div class="col-lg-3 col-sm-6 col-12 py-4 d-flex">
                                       <div class="card-doctor">
                                           <div class="doctor-img">
                                               <img src="./image/3.png" alt="2" />
@@ -233,7 +256,7 @@
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="col-lg-3 col-sm-6 col-12 px-2 py-4 d-flex">
+                                  <div class="col-lg-3 col-sm-6 col-12 py-4 d-flex">
                                       <div class="card-doctor">
                                           <div class="doctor-img">
                                               <img src="./image/4.png" alt="2" />
@@ -255,7 +278,7 @@
                           
                           <div class="carousel-item">
                               <div class="row">
-                                 <div class="col-lg-3 col-sm-6 col-12 px-2 py-4 d-flex">
+                                 <div class="col-lg-3 col-sm-6 col-12 py-4 d-flex">
                                       <div class="card-doctor">
                                           <div class="doctor-img">
                                               <img src="./image/1.png" alt="2" />
@@ -273,7 +296,7 @@
                                       </div>
                                   </div>
                                   
-                                  <div class="col-lg-3 col-sm-6 col-12 px-2 py-4 d-flex">
+                                  <div class="col-lg-3 col-sm-6 col-12 py-4 d-flex">
                                       <div class="card-doctor">
                                           <div class="doctor-img">
                                               <img src="./image/2.png" alt="2" />
@@ -291,7 +314,7 @@
                                       </div>
                                   </div>
                                   
-                                 <div class="col-lg-3 col-sm-6 col-12 px-2 py-4 d-flex">
+                                 <div class="col-lg-3 col-sm-6 col-12 py-4 d-flex">
                                       <div class="card-doctor">
                                           <div class="doctor-img">
                                               <img src="./image/3.png" alt="2" />
@@ -308,7 +331,7 @@
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="col-lg-3 col-sm-6 col-12 px-2 py-4 d-flex">
+                                  <div class="col-lg-3 col-sm-6 col-12 py-4 d-flex">
                                       <div class="card-doctor">
                                           <div class="doctor-img">
                                               <img src="./image/4.png" alt="2" />
@@ -366,7 +389,7 @@
           </div>
         </div>
         
-        <div class="our-services">
+        <div id="features" class="our-services">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-12 py-5 d-flex">
@@ -392,7 +415,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="row">
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 pt-4 d-flex">
                                             <div class="card-doctor">
                                               <div class="doctor-img">
                                                   <img src="./image/p1.jpg" alt="p1" />
@@ -406,7 +429,7 @@
                                               </div>
                                           </div>
                                         </div>
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 pt-4 d-flex">
                                             <div class="card-doctor">
                                               <div class="doctor-img">
                                                   <img src="./image/p2.jpg" alt="p2" />
@@ -420,7 +443,7 @@
                                               </div>
                                           </div>
                                         </div>
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 pt-4 d-flex">
                                             <div class="card-doctor">
                                               <div class="doctor-img">
                                                   <img src="./image/p3.jpg" alt="p3" />
@@ -439,7 +462,7 @@
                                 
                                 <div class="carousel-item">
                                     <div class="row">
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 pt-4 d-flex">
                                             <div class="card-doctor">
                                               <div class="doctor-img">
                                                   <img src="./image/p1.jpg" alt="p1" />
@@ -453,7 +476,7 @@
                                               </div>
                                           </div>
                                         </div>
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 pt-4 d-flex">
                                             <div class="card-doctor">
                                               <div class="doctor-img">
                                                   <img src="./image/p2.jpg" alt="p2" />
@@ -467,7 +490,7 @@
                                               </div>
                                           </div>
                                         </div>
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 pt-4 d-flex">
                                             <div class="card-doctor">
                                               <div class="doctor-img">
                                                   <img src="./image/p3.jpg" alt="p3" />
@@ -498,7 +521,7 @@
         </div>
         
         
-        <div class="patients-shell">
+        <div id="reviews" class="patients-shell">
             <div class="topline">
                <h1>Customer Reviews</h1>
                <p>All our consultants are highly experienced in their fields and produce excellent outcomes for patients</p>
@@ -509,7 +532,6 @@
                      <ul class="carousel-indicators doctor-indicator">
                         <li data-target="#patients" data-slide-to="0" class="active"></li>
                         <li data-target="#patients" data-slide-to="1"></li>
-                        <li data-target="#patients" data-slide-to="2"></li>
                      </ul>
              
                       <div class="carousel-inner">
@@ -522,7 +544,7 @@
                                           </div>
                                           <div class="doctor-info">
                                               <h6>JUSTIN FORDER</h6>
-                                              <a class="patient-link" href="#">Patient</a>
+                                              <a class="patient-link" href="#patient1">Patient</a>
                                                   <p>Doctors really do care! I had a wonderfull experience when coming in to Doctors care! The staff was incredibly friendly and professional.</p>
                                           </div>
                                       </div>
@@ -535,7 +557,7 @@
                                           </div>
                                           <div class="doctor-info">
                                               <h6>JUSTIN FORDER</h6>
-                                              <a class="patient-link" href="#">Patient</a>
+                                              <a class="patient-link" href="#patient2">Patient</a>
                                               <p>Doctors really do care! I had a wonderfull experience when coming in to Doctors care! The staff was incredibly friendly and professional.</p>
                                           </div>
                                       </div>
@@ -548,7 +570,7 @@
                                           </div>
                                           <div class="doctor-info">
                                               <h6>JUSTIN FORDER</h6>
-                                              <a class="patient-link" href="#">Patient</a>
+                                              <a class="patient-link" href="#patient4">Patient</a>
                                                   <p>Doctors really do care! I had a wonderfull experience when coming in to Doctors care! The staff was incredibly friendly and professional.</p>
                                           </div>
                                       </div>
@@ -565,7 +587,7 @@
                                           </div>
                                           <div class="doctor-info">
                                               <h6>JUSTIN FORDER</h6>
-                                              <a class="patient-link" href="#">Patient</a>
+                                              <a class="patient-link" href="#patient4">Patient</a>
                                                   <p>Doctors really do care! I had a wonderfull experience when coming in to Doctors care! The staff was incredibly friendly and professional.</p>
                                           </div>
                                       </div>
@@ -578,7 +600,7 @@
                                           </div>
                                           <div class="doctor-info">
                                               <h6>JUSTIN FORDER</h6>
-                                              <a class="patient-link" href="#">Patient</a>
+                                              <a class="patient-link" href="#patient5">Patient</a>
                                               <p>Doctors really do care! I had a wonderfull experience when coming in to Doctors care! The staff was incredibly friendly and professional.</p>
                                           </div>
                                       </div>
@@ -591,7 +613,7 @@
                                           </div>
                                           <div class="doctor-info">
                                               <h6>JUSTIN FORDER</h6>
-                                              <a class="patient-link" href="#">Patient</a>
+                                              <a class="patient-link" href="#patient6">Patient</a>
                                                   <p>Doctors really do care! I had a wonderfull experience when coming in to Doctors care! The staff was incredibly friendly and professional.</p>
                                           </div>
                                       </div>
@@ -603,7 +625,7 @@
             </div>
         </div>
         
-        <div class="medical-news">
+        <div id="news" class="medical-news">
             <div class="topline">
                <h1>Medical News</h1>
                <p>All our consultants are highly experienced in their fields and produce excellent outcomes for patients</p>
@@ -612,15 +634,14 @@
             <div class="container">
             <div class="carousel slide" data-ride="carousel" id="medical-news">
                            
-                    <ul class="carousel-indicators doctor-indicator">
-                        <li data-target="#medical-news" data-slide-to="0" class="active"></li>
-                        <li data-target="#medical-news" data-slide-to="1"></li>
-                        <li data-target="#medical-news" data-slide-to="2"></li>
-                     </ul>
+                <ul class="carousel-indicators doctor-indicator">
+                    <li data-target="#medical-news" data-slide-to="0" class="active"></li>
+                    <li data-target="#medical-news" data-slide-to="1"></li>
+                </ul>
                             <div class="carousel-inner card-clinic">
                                 <div class="carousel-item active">
                                     <div class="row">
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 d-flex">
                                             <div class="card-doctor card-medical">
                                               <div class="doctor-img">
                                                   <img src="./image/p1.jpg" alt="p1" />
@@ -634,12 +655,12 @@
                                                       <span class="medical-img">
                                                           <img src="image/1.png" alt="1" />
                                                       </span> &nbsp;
-                                                      <a class="patient-link" href="#">By John Doe</a>
+                                                      <a class="patient-link" href="#john">By John Doe</a>
                                                   </div>
                                               </div>
                                           </div>
                                         </div>
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 d-flex">
                                             <div class="card-doctor card-medical">
                                               <div class="doctor-img">
                                                   <img src="./image/p2.jpg" alt="p2" />
@@ -653,12 +674,12 @@
                                                       <span class="medical-img">
                                                           <img src="image/1.png" alt="1" />
                                                       </span> &nbsp;
-                                                      <a class="patient-link" href="#">By Paul Gibb</a>
+                                                      <a class="patient-link" href="#paul">By Paul Gibb</a>
                                                   </div>
                                               </div>
                                           </div>
                                         </div>
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 d-flex">
                                             <div class="card-doctor card-medical">
                                               <div class="doctor-img">
                                                   <img src="./image/p3.jpg" alt="p3" />
@@ -672,7 +693,7 @@
                                                       <span class="medical-img">
                                                           <img src="image/1.png" alt="1" />
                                                       </span> &nbsp;
-                                                      <a class="patient-link" href="#">By Tom Smith</a>
+                                                      <a class="patient-link" href="#tom">By Tom Smith</a>
                                                   </div>
                                               </div>
                                           </div>
@@ -682,7 +703,7 @@
                                 
                                 <div class="carousel-item">
                                     <div class="row">
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 d-flex">
                                             <div class="card-doctor card-medical">
                                               <div class="doctor-img">
                                                   <img src="./image/p1.jpg" alt="p1" />
@@ -696,12 +717,12 @@
                                                       <span class="medical-img">
                                                           <img src="image/1.png" alt="1" />
                                                       </span> &nbsp;
-                                                      <a class="patient-link" href="#">By John Doe</a>
+                                                      <a class="patient-link" href="#doe">By John Doe</a>
                                                   </div>
                                               </div>
                                           </div>
                                         </div>
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 d-flex">
                                             <div class="card-doctor card-medical">
                                               <div class="doctor-img">
                                                   <img src="./image/p2.jpg" alt="p2" />
@@ -715,12 +736,12 @@
                                                       <span class="medical-img">
                                                           <img src="image/1.png" alt="1" />
                                                       </span> &nbsp;
-                                                      <a class="patient-link" href="#">By Paul Gibb</a>
+                                                      <a class="patient-link" href="#gibb">By Paul Gibb</a>
                                                   </div>
                                               </div>
                                           </div>
                                         </div>
-                                        <div class="col-md-4 col-12 py-2 d-flex">
+                                        <div class="col-md-4 col-12 py-2 mb-4 mb-md-0 d-flex">
                                             <div class="card-doctor card-medical">
                                               <div class="doctor-img">
                                                   <img src="./image/p3.jpg" alt="p3" />
@@ -734,7 +755,7 @@
                                                       <span class="medical-img">
                                                           <img src="image/1.png" alt="1" />
                                                       </span> &nbsp;
-                                                      <a class="patient-link" href="#">By Tom Smith</a>
+                                                      <a class="patient-link" href="#smith">By Tom Smith</a>
                                                   </div>
                                               </div>
                                           </div>
@@ -743,8 +764,142 @@
                                 </div>
                             </div>  
                         </div>
+            </div>  
+        </div>
+        
+        <div class="appointment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 mb-5 mb-md-0 d-flex ">
+                        <div id="accordion" class="d-flex justify-content-between flex-column flex-fill" >
+                            <div class="card mb-3 instructions">
+                              <div class="card-header instruct-header">
+                                <a class="card-link instruct-link d-flex justify-content-between" data-toggle="collapse" href="#collapseOne">
+                                 Why should i choose Medical Health?
+                                  <span class="fa fa-plus plus"></span>
+                                  <span class="fa fa-minus minus"></span>
+                                </a>
+                              </div>
+                              <div id="collapseOne" class="collapse mt-3 show instruct-body" data-parent="#accordion">
+                                <div class="card-body bg-white">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="card mb-3 instructions">
+                              <div class="card-header instruct-header">
+                                <a class="card-link instruct-link d-flex justify-content-between" data-toggle="collapse" href="#collapseTwo">
+                                 What are the Centre's visiting hours?
+                                  <span class="fa fa-plus plus"></span>
+                                  <span class="fa fa-minus minus"></span>
+                                </a>
+                              </div>
+                              <div id="collapseTwo" class="collapse mt-3 instruct-body" data-parent="#accordion">
+                                <div class="card-body bg-white">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="card mb-3 instructions">
+                              <div class="card-header instruct-header">
+                                <a class="card-link instruct-link d-flex justify-content-between" data-toggle="collapse" href="#collapseThree">
+                                 How many visitors are allowed?
+                                  <span class="fa fa-plus plus"></span>
+                                  <span class="fa fa-minus minus"></span>
+                                </a>
+                              </div>
+                              <div id="collapseThree" class="collapse mt-3 instruct-body" data-parent="#accordion">
+                                <div class="card-body bg-white">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="card mb-3 instructions">
+                              <div class="card-header instruct-header">
+                                <a class="card-link instruct-link d-flex justify-content-between" data-toggle="collapse" href="#collapsefour">
+                                 Where is the Medical Health Centre?
+                                  <span class="fa fa-plus plus"></span>
+                                  <span class="fa fa-minus minus"></span>
+                                </a>
+                              </div>
+                              <div id="collapsefour" class="collapse mt-3 instruct-body" data-parent="#accordion">
+                                <div class="card-body bg-white">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="card instructions">
+                              <div class="card-header instruct-header">
+                                <a class="card-link instruct-link d-flex justify-content-between" data-toggle="collapse" href="#collapsefive">
+                                 What service do you provide?
+                                  <span class="fa fa-plus plus"></span>
+                                  <span class="fa fa-minus minus"></span>
+                                </a>
+                              </div>
+                              <div id="collapsefive" class="collapse mt-3 instruct-body" data-parent="#accordion">
+                                <div class="card-body bg-white">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex">
+                        <div class="request-appoint bg-white px-3 py-4 d-flex flex-column flex-fill">
+                            <h6>REQUEST APPOINTMENT</h6>
+                            <form class="d-flex justify-content-between flex-column flex-fill mb-0">
+                                <div class="row">
+                                    <div class="col-sm-6 col-12 my-2">
+                                        <input type="text" placeholder="Name*" class="form-control bg-light" id="name">
+                                    </div>
+                                    <div class="col-sm-6 col-12 my-2">
+                                        <input type="tel" placeholder="Phone*" class="form-control bg-light" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-12 my-2">
+                                        <input type="email" placeholder="Email*" class="form-control bg-light" id="email">
+                                    </div>
+                                    <div class="col-sm-6 col-12 my-2">
+                                        <input type="date" placeholder="Date*" class="form-control bg-light" id="date" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-12 my-2">
+                                    <select name="department" class="custom-select bg-light"> 
+                                       <option selected>Departments</option>
+                                       <option value="Medical">Medical</option>
+                                       <option value="Health Care">Health Care</option>
+                                       <option value="Services">Services</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-sm-6 col-12 my-2">
+                                    <select name="doctors" class="custom-select bg-light">
+                                       <option selected>Doctors</option>
+                                       <option value="Dr.Paul Skinner">Dr.Paul skinner</option>
+                                       <option value="Dr.Tom Smith">Dr.Tom Smith</option>
+                                       <option value="Dr.Paul Raynolds">Dr.paul Raynolds</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-12 my-2">
+                                        <textarea class="form-control bg-light" rows="5" id="message" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <button>SUBMIT NOW</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
         </div>
         
         

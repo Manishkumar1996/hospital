@@ -19,6 +19,17 @@ $background-grey: #F7F7F7;
     outline: 0 !important;
 }
 
+%button:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border-color: $pagecolor;
+    background-color: $pagecolor;
+    color: white;
+}
+
+%button:active {
+    filter: grayscale(0.5);
+}
+
 
 .clearfix::after {
     content: " ";
@@ -118,20 +129,12 @@ $background-grey: #F7F7F7;
         
         button {
             color: black;
-            text-transform: uppercase;
-            padding: 15px 20px;
-            font-size: 10px;
-            font-weight: bold;
+            @extend %button;
             background-color: white;
             border: none;
             margin-right: 15px !important;
         }
         
-        button:hover {
-            background-color: $pagecolor;
-            color: white;
-            outline: 0;
-        }
     }
     
     @media only screen and (max-width: 767px) {
@@ -192,12 +195,8 @@ $background-grey: #F7F7F7;
         }
         
         button {
-            background-color: transparent;
-            border: 1px solid white;
+            @extend %button;
             color: white;
-            text-transform: uppercase;
-            padding: 10px 15px;
-            font-size: 12px;
         }
     }
     
@@ -315,7 +314,7 @@ $background-grey: #F7F7F7;
     }
     
     .service-box {
-        padding: 0 0 20px 0 !important ;
+        padding: 0 15px 20px 15px !important ;
     }
     
 }
@@ -330,6 +329,7 @@ $background-grey: #F7F7F7;
 .card-doctor {
     background-color: white;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+//    padding: 0 15px;
     
     display: flex;
     flex-direction: column;
@@ -383,7 +383,6 @@ $background-grey: #F7F7F7;
         button {
             @extend %button;
             border: 1px solid $pagecolor;
-            background-color: white;
         }
     }
 }
@@ -421,12 +420,14 @@ $background-grey: #F7F7F7;
     background-repeat: no-repeat;
     background-position: center top;
     
+    
     .avail-color {
         background-color: rgba(68, 137, 254, 0.8);
+        padding: 100px 0;
     }
     
     .avail-info {
-        padding: 100px 0;
+        
         text-align: center;
         color: white;
         
@@ -522,9 +523,9 @@ $background-grey: #F7F7F7;
     
     .doctor-info {
 //        align-self: flex-end;
-         padding-top: 70px;
+        padding-top: 70px;
         background-color: white;
-            box-shadow: 0 0 8px rgba(0,0,0,0.3)!important;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     }
     
     .patient-img {
@@ -579,5 +580,72 @@ $background-grey: #F7F7F7;
             border-radius: 50px;
             object-position: center top;
         }
+    }
+}
+
+
+.appointment {
+    padding: 100px 0;
+    background-color: $background-grey;
+}
+
+.instructions {
+    border: none !important;
+    background-color: transparent;
+    
+    
+    .instruct-header {
+        background-color: $pagecolor !important;
+        border-bottom: none !important;
+        
+        
+        .instruct-link {
+            color: white !important;
+            background-color: $pagecolor;
+            
+            .minus {
+                display: inline-block;
+            }
+            
+            .plus {
+                display: none !important;
+            }
+        }
+        
+        
+        .instruct-link.collapsed {
+            
+            .minus {
+                display: none;
+            }
+            
+            .plus {
+                display: inline-block !important;
+            }
+        }
+    }
+    
+    .instruct-body {
+        position: relative;
+    }
+    
+    .instruct-body::before {
+        content: " ";
+        display: inline-block;
+        padding: 5px;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(-200% , -50%) rotate(45deg);
+    }  
+}
+
+.request-appoint {
+    
+    button {
+        @extend %button;
+        background-color: $pagecolor;
+        color: white;
     }
 }
