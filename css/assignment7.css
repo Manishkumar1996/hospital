@@ -37,10 +37,13 @@
 .welcome {
   min-height: 975px;
   background-image: url("../image/welcome.jpg");
-  background-position: center right;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+.welcome .welcome-inner {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .welcome .nav-1,
 .welcome .nav-2 {
@@ -68,6 +71,11 @@
 }
 .welcome .nav-2 .navbar-brand {
   border-bottom: none !important;
+  font-size: 25px;
+}
+.welcome .nav-2 .navbar-brand span {
+  font-size: 35px;
+  color: #4489FE;
 }
 @media only screen and (max-width: 767px) {
   .welcome .nav-2 #collapsibleNavbar {
@@ -507,6 +515,54 @@
 .request-appoint button {
   background-color: #4489FE;
   color: white;
+}
+
+.footer {
+  padding: 100px 0 150px 0;
+  background-color: #132646;
+  position: relative;
+}
+
+.contect .heading span {
+  font-size: 25px;
+  color: #4489FE;
+}
+.contect .item {
+  background-color: transparent;
+  text-align: left;
+  border: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+}
+.contect a:hover {
+  text-decoration: none;
+  color: white !important;
+}
+
+.media-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: left right;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.link:hover {
+  text-decoration: none;
+  color: white !important;
+}
+
+.footer-end {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer-end .navbar {
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 /*# sourceMappingURL=assignment7.css.map */

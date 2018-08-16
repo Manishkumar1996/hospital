@@ -42,10 +42,14 @@ $background-grey: #F7F7F7;
 .welcome {
     min-height: 975px;
     background-image: url("../image/welcome.jpg");
-    background-position: center right;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    
+    .welcome-inner {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
     
     .nav-1,
     .nav-2 {
@@ -81,6 +85,12 @@ $background-grey: #F7F7F7;
 
         .navbar-brand {
             border-bottom: none !important;
+            font-size: 25px;
+            
+            span {
+                font-size: 35px;
+                color: $pagecolor;
+            }
         }
 
     @media only screen and (max-width: 767px) {
@@ -647,5 +657,67 @@ $background-grey: #F7F7F7;
         @extend %button;
         background-color: $pagecolor;
         color: white;
+    }
+}
+
+.footer {
+    padding: 100px 0 150px 0;
+    background-color: #132646;
+    position: relative;
+}
+
+.contect {
+    
+    
+    .heading {
+        span {
+            font-size: 25px;
+            color: $pagecolor;
+        }
+    }
+    
+    .item {
+        background-color: transparent;
+        text-align: left;
+        border: 0;
+        padding: 20px 0;
+        border-bottom: 1px solid white;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1) !important;
+    }
+}
+
+.media-card {
+    
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position:left right;
+    } 
+    
+    
+}
+
+.link {
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .link:hover {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1) !important;
+    }
+
+.footer-end {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.2) !important;
     }
 }
